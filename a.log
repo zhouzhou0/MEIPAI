@@ -1,0 +1,18 @@
+2019-07-29 17:50:38 [scrapy.core.scraper] ERROR: Error processing {'files': '西双版纳原始森林公园可爱的小浣熊🐿<( ˘ ³˘)/🌹', 'file_urls': 'http://mvvideo11.meitudata.com/580defec12dc57350.mp4?k=b2f263748cf1a753027ce9b79a41aef9&t=5d42b4ea'}
+Traceback (most recent call last):
+  File "e:\anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\pycharm\video\pipelines.py", line 37, in process_item
+    urlretrieve(urls, os.path.join(self.path,title+'.mp4' ))
+  File "e:\anaconda3\lib\urllib\request.py", line 258, in urlretrieve
+    tfp = open(filename, 'wb')
+OSError: [Errno 22] Invalid argument: 'D:\\pycharm\\西双版纳原始森林公园\\西双版纳原始森林公园可爱的小浣熊🐿<(˘³˘)🌹.mp4'
+2019-07-29 18:12:21 [scrapy.core.scraper] ERROR: Error processing {'files': '这里是全国最大的热带植物天堂【🍉西双版纳勐仑热带植物园】✔我们的讲解员是一位当地的傣族美女，当地人把年轻的美女都叫做:骚哆哩，帅哥叫:猫哆哩。😋😋#骚哆哩##🍉西双版纳热带植物园##我要上热门@美拍小助手#', 'file_urls': 'http://mvvideo10.meitudata.com/5cac51db2939825crbagfl4203_H264_1_7cec5963f6f9e3.mp4?k=35a04bf6cc83c8a884804aa8e672d266&t=5d42bae0'}
+Traceback (most recent call last):
+  File "e:\anaconda3\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\pycharm\video\pipelines.py", line 37, in process_item
+    urlretrieve(urls, os.path.join(self.path,title+'.mp4' ))
+  File "e:\anaconda3\lib\urllib\request.py", line 258, in urlretrieve
+    tfp = open(filename, 'wb')
+OSError: [Errno 22] Invalid argument: 'D:\\pycharm\\西双版纳热带植物园\\这里是全国最大的热带植物天堂【🍉西双版纳勐仑热带植物园】✔我们的讲解员是一位当地的傣族美女，当地人把年轻的美女都叫做:骚哆哩，帅哥叫:猫哆哩。😋😋#骚哆哩##🍉西双版纳热带植物园##我要上热门@美拍小助手#.mp4'
